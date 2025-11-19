@@ -1,0 +1,23 @@
+{
+  "name": "ong-esperanca",
+  "version": "1.0.0",
+  "description": "Site institucional da ONG Esperança - Entregas I a IV",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "postcss assets/css/styles.css -o dist/assets/css/styles.min.css --env production",
+    "build:js": "terser assets/js/app.js -c -m -o dist/assets/js/app.min.js",
+    "build:html": "html-minifier --collapse-whitespace --remove-comments --minify-css true --minify-js true index.html -o dist/index.html",
+    "build": "npm run build:css && npm run build:js && npm run build:html",
+    "images:compress": "npx imagemin 'assets/img/*' --out-dir=dist/assets/img",
+    "predeploy": "npm run build && npm run images:compress",
+    "deploy:gh-pages": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "postcss-cli": "^9.1.0",
+    "cssnano": "^6.0.0",
+    "terser": "^5.17.0",
+    "html-minifier": "^4.0.0",
+    "imagemin": "^8.0.0",
+    "gh-pages": "^4.0.0"
+  }
+}
