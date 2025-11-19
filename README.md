@@ -21,4 +21,14 @@ O projeto é composto por três páginas principais:
 │ │ ├── banner.png
 │ │ ├── projeto1.jpg
 │ │ └── voluntarios.jpg
+│ ├── css/
+│ │ ├── buttons.css
+│ │ ├── cards.css
+│ │ ├── forms.css
+│ │ └── grid.css
+│ │ ├── header.css
+│ │ ├── responsive.css
+│ │ ├── styles.css
+│ │ └── variables.css
 
+\
