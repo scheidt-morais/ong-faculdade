@@ -1,0 +1,16 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-16);
+}
+.col-12 { grid-column: span 12; }
+.col-6 { grid-column: span 6; }
+.col-4 { grid-column: span 4; }
+.col-3 { grid-column: span 3; }
+@media (max-width: 1000px){
+  /* reduzificação progressiva */
+  .grid { grid-template-columns: repeat(6,1fr); }
+  .col-6 { grid-column: span 6; }
+  .col-12 { grid-column: span 6; }
+}
