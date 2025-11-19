@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONG Esperança - Início</title>
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Esperança</title>
 
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/templates.js" defer></script>
+  <script src="assets/js/validators.js" defer></script>
+  <script src="assets/js/storage.js" defer></script>
+  <script src="assets/js/accessibility.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</head>
 <body>
 
-<header>
-    <img src="assets/img/logo.svg" alt="Logo da ONG Esperança" width="120">
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header role="banner" class="site-header" aria-label="Cabeçalho principal">
+    <div class="container header-inner">
+      <img src="assets/img/logo.svg" alt="Logo da ONG Esperança" width="120" height="auto">
+      <nav role="navigation" aria-label="Menu principal">
+        <ul class="main-nav" role="menubar">
+          <li role="none"><a role="menuitem" href="#home" data-route>Início</a></li>
+          <li role="none"><a role="menuitem" href="#projetos" data-route>Projetos</a></li>
+          <li role="none"><a role="menuitem" href="#cadastro" data-route>Cadastro</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
 
-<main>
+      <div class="access-controls" aria-hidden="false">
+        <button id="btn-contrast" aria-pressed="false" title="Alternar alto contraste">Alto contraste</button>
+        <button id="btn-theme" aria-pressed="false" title="Alternar tema escuro/claro">Modo escuro</button>
+      </div>
+    </div>
+  </header>
 
-    <section aria-labelledby="titulo-home">
-        <h1 id="titulo-home">Bem-vindo à ONG Esperança</h1>
-        <img src="assets/img/banner.png" alt="Imagem de crianças em um projeto social">
-        <p>Promovemos impacto social por meio de educação, saúde e desenvolvimento comunitário.</p>
-    </section>
+  <main id="main-content" role="main" tabindex="-1" aria-live="polite" class="container app-root">
+    <!-- Conteúdo injetado pela SPA (app.js) -->
+  </main>
 
-    <section>
-        <h2>Nossa Missão</h2>
-        <p>Transformar vidas através de projetos sociais sustentáveis e inclusivos.</p>
-    </section>
-
-    <section>
-        <h2>Valores</h2>
-        <ul>
-            <li>Transparência</li>
-            <li>Compromisso</li>
-            <li>Empatia</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Entre em Contato</h2>
-        <address>
-            <p><strong>E-mail:</strong> contato@ongesperanca.org</p>
-            <p><strong>Telefone:</strong> (11) 99999-0000</p>
-            <p><strong>Endereço:</strong> Rua da Solidariedade, 100 – São Paulo, SP</p>
-        </address>
-    </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2025 - ONG Esperança. Todos os direitos reservados.</p>
-</footer>
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 ONG Esperança — Todos os direitos reservados.</p>
+      <p class="sr-only" aria-hidden="false">Website acessível conforme WCAG 2.1 AA.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
