@@ -34,3 +34,15 @@ O projeto é composto por três páginas principais:
 │   │   └── scripts.js
 
 \
+
+## Tecnologias
+- HTML5 semântico
+- CSS3 (Design System / variáveis)
+- JavaScript (ES modules, SPA)
+- LocalStorage
+- Node.js (ferramentas de build opcionais)
+- Git / GitHub (GitFlow)
+
+---
+
+
