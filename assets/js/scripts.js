@@ -1,8 +1,3 @@
-/* =======================================================
-   SPA – Sistema de Rotas + Templates
-========================================================= */
-
-// Mapear páginas (templates SPA)
 const templates = {
     home: `
         <section class="hero">
@@ -68,8 +63,6 @@ const templates = {
     `
 };
 
-
-// Carregar páginas
 function loadPage(route) {
     const app = document.getElementById("app");
     app.innerHTML = templates[route] || templates.home;
@@ -77,7 +70,6 @@ function loadPage(route) {
     if (route === "cadastro") initFormValidation();
 }
 
-// Detectar mudanças no hash
 function router() {
     const route = location.hash.replace("#", "") || "home";
     loadPage(route);
@@ -86,11 +78,6 @@ function router() {
 window.addEventListener("hashchange", router);
 window.addEventListener("load", router);
 
-
-
-/* =======================================================
-   VALIDAÇÃO DO FORMULÁRIO – DOM + Feedback Visual
-========================================================= */
 
 function initFormValidation() {
     const form = document.getElementById("cadastroForm");
@@ -133,10 +120,6 @@ function initFormValidation() {
 }
 
 
-
-/* =======================================================
-   ALERTAS (UI Component)
-========================================================= */
 
 function showAlert(msg, type = "success") {
     const alertArea = document.getElementById("alert-area");
