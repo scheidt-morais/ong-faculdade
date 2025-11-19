@@ -1,0 +1,7 @@
+.site-header { background: var(--primary); color: var(--white); padding: var(--space-16) 0; box-shadow: var(--shadow-sm); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:var(--space-16); }
+.main-nav { display:flex; gap: var(--space-16); }
+.main-nav a { color: var(--white); font-weight:600; padding: 8px 10px; border-radius:6px; }
+.main-nav a:focus, .main-nav a:hover { background: rgba(255,255,255,0.08); }
+.access-controls button { background: transparent; color: var(--white); border:1px solid rgba(255,255,255,0.12); padding:6px 10px; border-radius:6px; margin-left:8px; cursor:pointer; }
+.site-footer { background: var(--primary); color: var(--white); padding: var(--space-16) 0; text-align:center; margin-top: var(--space-24); }
