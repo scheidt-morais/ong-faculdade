@@ -30,5 +30,7 @@ O projeto é composto por três páginas principais:
 │ │ ├── responsive.css
 │ │ ├── styles.css
 │ │ └── variables.css
+│   ├── js/
+│   │   └── scripts.js
 
 \
