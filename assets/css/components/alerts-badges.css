@@ -1,0 +1,5 @@
+.alert { padding:12px; border-radius:8px; margin-bottom: var(--space-16); }
+.alert.success { background: #e6ffef; color: #006a44; border:1px solid #baf1d7; }
+.alert.error { background: #ffe9e9; color: #8b0000; border:1px solid #ffb3b3; }
+.badge { display:inline-block; padding:6px 10px; border-radius:6px; background:var(--secondary); color: white; font-weight:600; }
+.badge.primary { background: var(--primary); }
